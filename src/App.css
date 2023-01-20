@@ -1,38 +1,168 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  background: #313336;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  margin: 30px auto;
+  padding: 1rem;
+  width: 520px;
+  border: 3px solid #768397;
+  border-radius: 5px;
+  background: #657388;
+}
+
+h1{
   color: white;
+  font-size: 50px;
+  text-align: center;
+  margin: 10px;
+  text-shadow: 3px 3px #050505;
 }
 
-.App-link {
-  color: #61dafb;
+form h2{
+  color: white;
+  font-size: 30px;
+  text-align: left;
+  margin: 10px;
+  text-decoration-line: underline;  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form input[type="text"]{
+  border: 1px solid #dedede;
+  border-radius: 30px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+form button{
+  background: rgb(79, 153, 110);
+  cursor: pointer;
+  color: white;
+  display: block;
+  margin: 10px 0 30px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  border-color: #dfd5dd;
+  border-radius: 30px;
+}
+
+form button.update{
+  background: rgb(79, 153, 110);
+  cursor: pointer;
+  color: white;
+  display: block;
+  margin: 10px 0 30px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  width: 60%;
+  border-color: #dfd5dd;
+  border-radius: 30px;
+}
+
+form button.cancel{
+  background: rgb(196, 77, 77);
+  cursor: pointer;
+  color: white;
+  display: block;
+  margin: 10px 0 30px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  width: 40%;
+  margin-left: 10px;
+  border-color: #dfd5dd;
+  border-radius: 30px;
+}
+
+ul {
+  margin: 12px;
+  padding: 5px;
+  list-style-type: none;
+}
+
+li{
+  word-wrap: break-word;
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: left;
+  margin: 10px;
+  padding-top: 2%;
+}
+
+.flex-button{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li button.checked{
+  display: inline-block;
+  background: rgb(129, 127, 121);
+  cursor: pointer;
+  color: white;
+  display: block;
+  margin: 10px 0 30px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  width: 60%;
+  border-color: #dfd5dd;
+  border-radius: 30px;
+}
+
+li button.edit{
+  display: inline-block;
+  background: rgb(197, 159, 78);
+  cursor: pointer;
+  color: white;
+  display: block;
+  margin: 10px 0 30px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  width: 20%;
+  margin-left: 10px;
+  border-color: #dfd5dd;
+  border-radius: 30px;
+}
+
+li button.delete{
+  display: inline-block;
+  background: rgb(196, 77, 77);
+  cursor: pointer;
+  color: white;
+  display: block;
+  margin: 10px 0 30px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  width: 20%;
+  margin-left: 10px;
+  border-color: #dfd5dd;
+  border-radius: 30px;
+}
+
+s {
+  color: #2e2f31;
 }
